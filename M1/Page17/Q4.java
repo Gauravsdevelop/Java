@@ -1,6 +1,7 @@
 // // Print the final number xyzw...
 
-// Take n as an integer input. Then take n digits as integer inputs and form a number from it and print that number as an integer output.
+// Take n as an integer input. Then take n digits as integer inputs and form a number from 
+// it and print that number as an integer output.
 
 // Input Format
 
@@ -10,9 +11,10 @@
 
 // Constraints
 
-// 1 <= n <= 2^3
+// 1 <= n <= 2^3 
 
 // 0 <= digits as integer inputs <= 9
+
 // Output Format
 
 // Print the final number as an integer output.
@@ -68,44 +70,86 @@
 
 // 79
 
+
+
+
+
+
+
+// import java.util.*;
+
+// public class Q4 {
+
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+       
+//         int n = scanner.nextInt();      //2
+//         scanner.nextLine(); 
+
+//         // Initialize an array to store the digits
+//         int[] digits = new int[n]; // 7 , 9
+
+//         // Reading the digits
+//         for (int i = 0; i < n; i++) {
+//             digits[i] = scanner.nextInt();  // [7 , 9 ]
+//         }
+
+//         // Close the scanner
+//         scanner.close();
+
+//         // Forming the number from the digits
+//         int formedNumber = formNumber(digits); 
+
+//         // Printing the formed number
+//         System.out.println(formedNumber);
+//     }
+
+//     // Function to form number from digits
+//     public static int formNumber(int[] digits) {  // [7 , 9 ]
+//         int number = 0;
+
+//         // Calculate the number from digits
+//         for (int i = 0; i < digits.length; i++) {
+//             number = number * 10 + digits[i]; // 7 9
+//         }
+
+//         return number;
+//     }
+// }
+
+// rupalis code
+
+
+
 import java.util.*;
 
 public class Q4 {
-
     public static void main(String[] args) {
-         Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        // Reading the number of digits, n
-        int n = scanner.nextInt();
-        scanner.nextLine(); // Consume newline character after n
+        int n = scanner.nextInt(); // 2
 
-        // Initialize an array to store the digits
-        int[] digits = new int[n];
+        if (n > 0) { //2
 
-        // Reading the digits
-        for (int i = 0; i < n; i++) {
-            digits[i] = scanner.nextInt();
-        }
+            int number = 0;
 
-        // Close the scanner
-        scanner.close();
+            for (int i = 0; i < n; i++) {
+                int digit = scanner.nextInt();   // 7 
 
-        // Forming the number from the digits
-        int formedNumber = formNumber(digits);
+                if (digit >= 0 && digit <= 9) {
 
-        // Printing the formed number
-        System.out.println(formedNumber);
-    }
+                    number = number * 10 + digit;   //7 //9
+                 } 
+                 else {
 
-    // Function to form number from digits
-    public static int formNumber(int[] digits) {
-        int number = 0;
+                    i--; // decrement i to re-take the digit
+                }
+            }
 
-        // Calculate the number from digits
-        for (int i = 0; i < digits.length; i++) {
-            number = number * 10 + digits[i];
-        }
+            // Output: formed number
+            System.out.println(number);
+        } 
 
-        return number;
     }
 }

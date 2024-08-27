@@ -61,42 +61,50 @@
 
 
 
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 public class Q5 {
-    public static void printPrimeFactors(int N) {
-        // Create a set to store the unique prime factors
-        Set<Integer> primeFactors = new HashSet<>();
-        
-        // Start with 2 as the first potential prime factor
-        int factor = 2;
-        
-        // Repeatedly divide N by the current factor until it is no longer divisible
-        while (N > 1) {
-            if (N % factor == 0) {
-                // If N is divisible by the current factor, add it to the set
-                primeFactors.add(factor);
-                
-                // Divide N by the current factor
-                N /= factor;
-            } else {
-                // If N is not divisible by the current factor, move on to the next factor
-                factor++;
-            }
-        }
-        
-        // Print the unique prime factors
-        for (int f : primeFactors) {
-            System.out.println(f);
-        }
-    }
 
+      
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
-        printPrimeFactors(N);
         scanner.close();
+
+        ArrayList<Integer> primeFactors = new ArrayList<>();
+        findUniquePrimeFactors(N, primeFactors);
+
+        // Sort the prime factors to ensure they are printed in ascending order
+        Collections.sort(primeFactors);
+
+        // Print the unique prime factors, each on a new line
+        for (int prime : primeFactors) {
+            System.out.println(prime);
+        }
+    }
+
+    private static void findUniquePrimeFactors(int n, ArrayList<Integer> primeFactors) {
+        // Check for number of 2s that divide n
+        if (n % 2 == 0) {
+            primeFactors.add(2);
+            while (n % 2 == 0) {
+                n /= 2;
+            }
+        }
+
+        // Check for odd factors from 3 to sqrt(n)
+        for (int i = 3; i * i <= n; i += 2) {
+            if (n % i == 0) {
+                primeFactors.add(i);
+                while (n % i == 0) {
+                    n /= i;
+                }
+            }
+        }
+
+        // If n becomes a prime number greater than 2
+        if (n > 2) {
+            primeFactors.add(n);
+        }
     }
 }

@@ -1,4 +1,5 @@
-// // Write a function to check if an Armstrong number or not
+// // Write a function to check if an Armstrong number or not 
+
 // Take n as an integer input.
 
 // Then write a function that takes in this n as an integer parameter and returns if n is an Armstrong number or not.
@@ -6,6 +7,7 @@
 // In the end, print true or false accordingly.
 
 // Note: An armstrong number is a number which is equal to the sum of the cube of its digits.
+// 407 = 4^3+0^3+7^3 = 403
 
 // Input Format
 
@@ -42,21 +44,10 @@
 // false
 // false
 // true
+
 import java.util.*;
 
 public class Q6 {
-
- // Function to check if a number is an Armstrong number
-    public static boolean isArmstrong(int n) {
-        int originalNumber = n;
-        int sum = 0;
-        while (n != 0) {
-            int digit = n % 10;
-            sum += digit * digit * digit;
-            n /= 10;
-        }
-        return sum == originalNumber;
-    }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -73,4 +64,18 @@ public class Q6 {
         
         scanner.close();
     }
+
+ // Function to check if a number is an Armstrong number
+    public static boolean isArmstrong(int n) {   //153 //15 // 1
+        int originalNumber = n;
+        int sum = 0;
+        while (n != 0) {
+            int digit = n % 10; //3 //5 // 1
+            sum = sum + digit * digit * digit; // 27 // 27 + 125 //  27+125+1 = 153
+            n /= 10; //  153/10= 15  // 15/10 = 1 
+        }
+        return sum == originalNumber;
+    }
+
+   
 }

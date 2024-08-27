@@ -1,4 +1,5 @@
 // // Print digit by digit of a three digit number
+
 // Given a three-digit positive number. Print its digits one by one starting from the digit at one’s place to the digit at hundred’s place in a separate line.
 
 // Input Format
@@ -23,6 +24,7 @@
 // Sample Input 1
 
 // 987
+
 // Sample Output 1
 
 // 7
@@ -62,8 +64,10 @@ public class Q2 {
 
         // Reading the three-digit number
         int number = scanner.nextInt();
-        scanner.close();
 
+    
+       scanner.close();
+    
         // Extracting and printing digits
         int ones = number % 10;
         int tens = (number / 10) % 10;
@@ -75,3 +79,29 @@ public class Q2 {
         System.out.println(hundreds);
     }
 }
+
+
+
+
+//hacker rank rupali 
+
+
+// import java.io.*;
+// import java.util.*;
+
+// public class Q2 {
+    
+//     public static void main(String[] args) {
+//       Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();    //    197 7 
+
+//            while(n>0)
+//         {
+//             int d = n%10; //7 // 9 // 1
+//             System.out.println(d); 
+//             n=n/10; //19 // 1 
+//         }
+        
+       
+//     }
+// }

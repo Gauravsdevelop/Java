@@ -1,4 +1,4 @@
-// // Find GCD 3
+// // Find GCD 3    //Greatest Common Divisor  //HCF heigest common factor
 
 // Take two integer inputs x and y. Then print the gcd of these two numbers as an integer output.
 
@@ -36,6 +36,11 @@
 // Sample Output 1
 
 // 20
+
+
+
+
+
 
 import java.util.*;
 

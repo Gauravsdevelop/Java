@@ -1,4 +1,4 @@
-// // HW_Mirror Image 4
+// // HW_ Mirror Image 4
 
 
 // Given an array of size n with unique integer elements. And Then take m as an integer input. Declare the second array of size m that stores values of int data-type. Then take m integer inputs and store them in the array one by one.
@@ -10,12 +10,10 @@
 // Input Format
 
 // An integer number n representing size of first array.
-
 // n integer inputs representing elements of first array.
-
 // An integer number m representing size of second array.
-
 // m integer inputs representing elements of second array.
+
 
 // Constraints
 

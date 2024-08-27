@@ -1,0 +1,114 @@
+Page 17
+
+Q1  :- Given x and y, print xy
+Q2  :- Print digit by digit of a three digit number
+Q3  :- Reverse a 3 digit number
+Q4  :- Print the final number xyzw... ()
+Q5  :- Reverse n-digit number
+Q6  :- Write a function to check if an Armstrong number or not  4^3+0^3+7^3 = 403
+Q7  :- Rotate 7-digit number to right by three ()
+Q8  :- HW_Reverse Digits
+Q9  :- HW_Check Palindrome //equal to the reverse of the number
+Q10 :- HW_Transform a Number ()
+
+
+
+Page 18 
+
+Q1 :- HW_Print Armstrong in a range
+Q2 :- HW_Print count of digits and digits line by line.
+Q3 :-  Find GCD 3  Greatest Common Divisor  //HCF heigest common factor ()
+Q4 :- Prime checker 2 ()
+Q5 :- Print all unique prime factors ()
+Q6 :- Print all factors of a number ()
+Q7 :- Divide n by 2 3 5 and tell steps ()
+Q8 :- HW_Print Primes 1
+Q9 :- HW_Print "prime" or "not prime" 
+Q10 :- Print the array elements linewise
+
+
+
+Page 19
+
+Q1  :-  Print Alternate Array Elements Linewise
+Q2  :-  Print Array Elements Reverse linewise
+Q3  :-  Print Array element if index divisible by 3
+Q4  :-  Check if two arrays are identical? ()
+Q5  :-  Print two arrays alternately ()
+Q6  :-  HW_Print Alternate array elements from 1st index
+Q7  :-  HW_Print Alternate array elements in reverse inline
+Q8  :-  HW_Print indexes where array elements are odd
+Q9  :-  HW_Print Even Array Elements inline
+Q10 :-  HW_Print Array Elements where index is not divisible by 4 inline
+
+
+
+
+
+
+Page 20 
+
+
+Q1 :-  HW_Print indexes ,  where array elements are even
+Q2 :- Check if x is present in array or not ()
+Q3 :- Print first index of x in array ()
+Q4 :- hw_Print last index of x in array
+Q5 :- Print First NON MATCHING NUMBER
+Q6 :- HW_Print First Vowel occurrence  (())
+Q7 :- HW_Print All Composite Number of Array  // not prime or more then two divisor ()
+Q8 :- HW_First NON Matching Value From End
+Q9 :- HW_First Occurance of consonant from End (())
+Q10 :-HW_Print Odd Elements of Array inline
+
+
+
+Page 21
+
+Q1 :-   Sum of all Elements of Array
+Q2 :-   GKSTR35 Count_Even
+Q3 :-   Maximum of Array  (())
+Q4 :-   Product of Elements Except Itself (())
+Q5 :-   HW_Product of Arrays 1
+Q6 :-   HW_Second Largest in array 2 (())
+Q7 :-   HW_GKSTR36 Count_IndexValue_Element (())
+Q8 :-   HW_Print Sum of Elements Except Itself (())
+Q9 :-   HW_Minimum in Array (())
+Q10 :-  HW_Remove elements 1 (())
+
+
+Page 22
+Q1  :- Check Characterstic
+Q2  :- Solve Array
+Q3  :- Update query 1
+Q4  :- Add One
+Q5  :- HW_Perform Operations 1
+Q6  :- HW_Update query 2
+Q7  :- HW_Element as an index
+Q8  :- HW_update with k
+Q9  :- HW_calculator 36
+Q10 :- Print Pair
+
+
+Page :- 23
+Q1  :- Find all Combination
+Q2  :- Solve Array
+Q3  :- Greater At Right
+Q4  :- maximum difference between the two elements
+Q5  :- HW_Find The Pair 4
+Q6  :- HW_Reverse Pair
+Q7  :- HW_Count Odd Pair
+Q8  :- HW_Find Difference 1
+Q9  :- HW_Find Difference 2
+Q10 :- HW_Counting Smaller Numbers in an Array
+
+
+
+Page:-24
+Q1 :- Max Count 3
+Q2 :- Find Duplicate 3
+Q3 :- Double Occurence
+Q4 :- Store Maximum (())  ---
+Q5 :- HW_Repeating and Missing element (()) --  
+Q6 :- HW_Find Me 6
+Q7 :- HW_Mirror Image 4
+
