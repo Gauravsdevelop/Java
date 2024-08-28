@@ -1,0 +1,10 @@
+Q1  :- GKSTR44 Bubble Sort 
+Q2  :- GKSTR45 Selection Sort
+Q3  :-     GKSTR43 Insertion Sort
+Q4  :- HW_Selection Sort Decreasing Order
+Q5  :- HW_Insertion Sort Decreasing Order
+Q6  :-      HW_Bubble sort decreasing order
+Q7  :-       HW_Kth Smallest Element
+Q8  :- increasing order using inbuilt sort // Arrays.sort
+Q9  :- decreasing order using inbuilt sort
+Q10 :- Sort the array according to their Square of each element
