@@ -1,107 +1,100 @@
+// // Peak Elements
 
-// // Sort the array according to their Square of each element
+// // Meet Laura, a data analyst who was given a task to identify peak elements from an array of numerical data. Laura was fascinated by the concept of peak elements and found them to be useful in many real-world scenarios, such as identifying the maximum temperature in a dataset.
 
+// // Find the peak elements by comparing each element with its adjacent elements and find elements that satisfy the given condition.
 
-// Given an array arr[] of N integers, the task is to sort the array according to the Squares of each element.
+// // **arr[i]** is a peak element only if **arr[i-1] < arr[i] > arr[i+1]**.
 
 // Input Format
-// First line take an integer input from user as N , where N is the size of array.
-// Second line takes N elements as integers input in array.
+
+// An integer N, which is the size of the array.
+// N integers, depicting the elements of the array.
 
 // Constraints
-// 1<=n<=100
-// -10^3<=arr[i]<=10^3
+
+// 0 <= arr.length <= 1000
+// 0 <= arr[i] <= 1000
 
 // Output Format
-// Return the sorted array according to their squares.
+
+// Return All the peak elements.
+
 // Sample Input 0
-// 5
-// 4 -1 0 -5 6
+// 6
+// 4 5 3 8 6 1
 // Sample Output 0
+// 5 8
 
-// 0 -1 4 -5 6 
+// Explanation 0
+// 5 is a peak element arr[0] < arr[1] > arr[2].
+
+// 8 is a peak element arr[2] < arr[3] > arr[4].
 
 
-// discussed
+
+//Discussed One
+
 import java.util.*;
 
-public class Q10 {
 
+public class Q10{
     public static void main(String[] args) {
-          Scanner scanner = new Scanner(System.in);
-
-        // Read the size of the array
-        int N = scanner.nextInt();
-
-        // Read the array elements
-        Integer[] arr = new Integer[N];
-
-        for (int i = 0; i < N; i++) {
-            arr[i] = scanner.nextInt();
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int[] A = new int[n];
+        for(int i=0; i<n; i++ ){
+            A[i] = scn.nextInt();
+        }
+        for(int i=1; i<n-1; i++){
+           if(A[i]>A[i+1]  && A[i]>A[i-1]){ //peak element condition
+            System.out.print(A[i]+ " ");
+           }
         }
 
-        // how to write own Comparator
-
-        Comparator<Integer>  myComp = new  Comparator<Integer>(){
-
-            public int compare(Integer a, Integer b ){
-              
-              return a*a - b*b;        // a-b for increasing order b-a for decreasing order here for square we use square
-
-            }
-        };
- 
-           Arrays.sort(arr, myComp);
-
-        // Output the sorted array
-        for (int i = 0; i < N; i++) {
-            System.out.print(arr[i] + " ");
         }
-    }
 }
 
-//  chat Gpt
+//chatgpt
 
 // import java.io.*;
 // import java.util.*;
 
-// public class Solution {
+// public class Q10 {
 
+ 
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 
-//         // Reading the size of the array
+//         // Read the size of the array
 //         int N = sc.nextInt();
 //         int[] arr = new int[N];
 
-//         // Reading the elements of the array
+//         // Read the elements of the array
 //         for (int i = 0; i < N; i++) {
 //             arr[i] = sc.nextInt();
 //         }
 
-//         // Create an array of objects to hold elements and their squares
-//         Element[] elements = new Element[N];
-//         for (int i = 0; i < N; i++) {
-//             elements[i] = new Element(arr[i], arr[i] * arr[i]);
-//         }
-
-//         // Sort elements based on their squared values
-//         Arrays.sort(elements, (a, b) -> Integer.compare(a.square, b.square));
-
-//         // Print the result array sorted by their squares
-//         for (Element e : elements) {
-//             System.out.print(e.value + " ");
+//         // Find and print the peak elements
+//         ArrayList<Integer> peaks = findPeakElements(arr);
+//         for (int peak : peaks) {
+//             System.out.print(peak + " ");
 //         }
 //     }
 
-//     // Helper class to store the value and its square
-//     static class Element {
-//         int value;
-//         int square;
+//     private static ArrayList<Integer> findPeakElements(int[] arr) {
+//         ArrayList<Integer> peaks = new ArrayList<>();
 
-//         Element(int value, int square) {
-//             this.value = value;
-//             this.square = square;
+//         if (arr.length < 3) {
+//             return peaks; // No peaks possible if less than 3 elements
 //         }
+
+//         for (int i = 1; i < arr.length - 1; i++) {
+//             if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+//                 peaks.add(arr[i]);
+//             }
+//         }
+
+//         return peaks;
 //     }
 // }

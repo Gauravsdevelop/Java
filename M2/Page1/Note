@@ -1,6 +1,6 @@
-Q1  :- GKSTR44 Bubble Sort 
-Q2  :- GKSTR45 Selection Sort
-Q3  :-     GKSTR43 Insertion Sort
+Q1  :- GKSTR44 Bubble Sort         // Max. element at correct position
+Q2  :- GKSTR45 Selection Sort      // Min. element at correct position
+Q3  :- GKSTR43 Insertion Sort     // Find current position for current number
 Q4  :- HW_Selection Sort Decreasing Order
 Q5  :- HW_Insertion Sort Decreasing Order
 Q6  :-      HW_Bubble sort decreasing order

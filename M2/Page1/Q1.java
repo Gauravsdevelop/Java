@@ -23,7 +23,6 @@
 // 3 4 7 8 9
 
 
-
 // Discussion
 
 import java.util.*;
@@ -52,12 +51,13 @@ public class Q1{
               A[j+1] = temp;
             //   System.out.print(A[i]);
             }
-         
+
         }
     }
     for(int i=0 ; i<n ; i++){
         System.out.print(A[i] +" " );
-    }
+  }
+
 
     }
 }

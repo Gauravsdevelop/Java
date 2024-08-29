@@ -1,36 +1,58 @@
-// HW_print the star pattern
+// // Sort an array in wave form 1
+
+// Let me introduce you to John, who loves to play with numbers. One day, he was given an unsorted array of integers and was challenged to transform it into a wave-like array. John found it interesting and decided to take up the challenge.
+
+// Help John by sorting the array into a wave like array. An array arr[0..n-1] is sorted in wave form if
+
+// arr[0] >= arr[1] <= arr[2] >= arr[3] <= arr[4] >= …..
 
 // Input Format
-
-// There is no input for this challenge.
+// First line take an integer input from user as N , where N is the size of array.
+// Second line takes N elements as non-negative integers input in array.
 
 // Constraints
-
-// NA
+// 1<=n<=100
+// 1<=arr[i]<=10^4
 
 // Output Format
+// Return the array in sorted wave form.
 
-// print the pattern
-
+// Sample Input 0
+// 7
+// 10 90 49 2 1 5 23
 // Sample Output 0
+// 2 1 10 5 49 23 90 
 
-// *****
-// *****
-// *****
-// *****
-// *****
-// *****
 
-public class Q7 {
 
+
+import java.util.*;
+
+public class Q7{
     public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-        System.out.println("*****");
-          System.out.println("*****");
-          System.out.println("*****");
-          System.out.println("*****");
-          System.out.println("*****");
-          System.out.println("*****");
-          
+        Scanner sc = new Scanner(System.in);
+       
+     int n = sc.nextInt();
+        int[] A = new int[n];
+     
+        for(int i=0; i<n; i++){
+            A[i] = sc.nextInt();
+        }
+     
+     
+        Arrays.sort(A);
+
+        for(int i=0; i<=n-2; i += 2){
+           
+            int tmp = A[i];
+            A[i] = A[i+1];
+            A[i+1] = tmp;
+
+        }   
+        
+            for(int i=0; i<n; i++){
+            System.out.print(A[i] + " ");
+        }
+
     }
 }
