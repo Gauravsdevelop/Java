@@ -1,7 +1,7 @@
 Q1  :- 
-Q2  :- 
-Q3  :- 
-Q4  :- 
+Q2  :-  Reach Target
+Q3  :-  Target Sum
+Q4  :-  3 Sum
 Q5  :- 
 Q6  :- 
 Q7  :- 
