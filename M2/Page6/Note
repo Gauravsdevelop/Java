@@ -1,10 +1,10 @@
 Q1  :- 
-Q2  :- 
-Q3  :- 
-Q4  :- 
+Q2  :- Greatest Till Me
+Q3  :- Print Prefix Sum between L and R
+Q4  :- Find Pivot Index
 Q5  :- 
 Q6  :- 
 Q7  :- 
-Q8  :- 
-Q9  :- 
-Q10 :- 
+Q8  :- Print Freq of Alphabet in String
+Q9  :- Int with Maximum Freq
+Q10 :- Maximum Freq Character
