@@ -26,6 +26,7 @@
 
 
 // // discussed one
+
 // import java.util.*;
 
 // public class Q2 {

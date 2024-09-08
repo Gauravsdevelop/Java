@@ -26,6 +26,8 @@
 // 3 2 3 
 // Explanation 0
 // print the matrix After shifting by 2
+
+    //discussed 
 import java.util.*;
 
 public class Q3 {
@@ -90,7 +92,6 @@ public class Q3 {
             for (int j = 0; j < n; j++) {
 
                 System.out.print(A[i][j] + " ");
-
             }
 
             System.out.println();
