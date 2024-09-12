@@ -1,37 +1,5 @@
 // // HW_First Occurance of consonant from End
 
-
-// Take n as an integer input. Declare the first array of size n that stores values of char data-type. Then take n character inputs and store them in the array one by one. Traverse the array from the last and print the index at which the consonant occurs for the first time.
-
-// Input Format
-
-// First line consists N as size.
-
-// Second line consists an array of N char Values
-
-// Constraints
-
-// NA
-// Output Format
-
-// First occurance of Constant from end.
-
-// Sample Input 0
-
-// 5
-// a
-// b
-// c
-// d
-// q
-// Sample Output 0
-
-// 4
-// Explanation 0
-
-// q is first consonant from last
-
-
 import java.util.*;
 
 public class Q9 {
@@ -73,3 +41,45 @@ public class Q9 {
         return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
     }
 }
+
+
+// Time Complexity: O(n) due to a single reverse pass through the array to find the first consonant.
+// Space Complexity: O(n) because of the storage required for the array of size n.
+
+
+
+
+
+
+
+
+// Take n as an integer input. Declare the first array of size n that stores values of char data-type. Then take n character inputs and store them in the array one by one. Traverse the array from the last and print the index at which the consonant occurs for the first time.
+
+// Input Format
+
+// First line consists N as size.
+
+// Second line consists an array of N char Values
+
+// Constraints
+
+// NA
+// Output Format
+
+// First occurance of Constant from end.
+
+// Sample Input 0
+
+// 5
+// a
+// b
+// c
+// d
+// q
+// Sample Output 0
+
+// 4
+
+// Explanation 0
+
+// q is first consonant from last

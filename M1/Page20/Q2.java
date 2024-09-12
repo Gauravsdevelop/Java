@@ -1,39 +1,9 @@
 // // Check if x is present in array or not
-// Given an array, the task is to write a Java program to check whether a specific element is present in this Array or not.
-
-// Input Format
-
-// First line contains integer N
-
-// Second line contains N integer representing elements of array.
-
-// Third line contains an integer.
-
-// Constraints
-
-// 1 < n <= 10^8
-// Output Format
-
-// Print True or False
-
-// Sample Input 0
-
-// 5
-// 1 2 3 4 5
-// 3
-// Sample Output 0
-
-// True
-
-
 import java.util.*;
-
 public class Q2 {
 
- 
-
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); 
 
         // Read the size of the array
         int n = scanner.nextInt();
@@ -65,3 +35,32 @@ public class Q2 {
 
     }
 }
+
+
+// Time Complexity: O(n) due to the single pass through the array to find the target element.
+// Space Complexity: O(n) because of the storage required for the array of size n.
+
+
+
+
+
+
+
+
+
+// Given an array, the task is to write a Java program to check whether a specific element is present in this Array or not.
+// Input Format
+// First line contains integer N
+// Second line contains N integer representing elements of array.
+// Third line contains an integer.
+// Constraints
+// 1 < n <= 10^8
+// Output Format
+// Print True or False
+// Sample Input 0
+// 5
+// 1 2 3 4 5
+// 3
+// Sample Output 0
+// True
+

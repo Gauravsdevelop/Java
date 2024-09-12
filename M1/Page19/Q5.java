@@ -1,5 +1,46 @@
 // // Print two arrays alternately
 
+import java.util.*;
+public class Q5 {
+     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        // Read the size of the arrays
+        int N = scanner.nextInt();
+        // Initialize arrays of size N
+        int[] array1 = new int[N];
+        int[] array2 = new int[N];
+        // Read elements of array1
+        for (int i = 0; i < N; i++) {
+            array1[i] = scanner.nextInt();
+        }
+        // Read elements of array2
+        for (int i = 0; i < N; i++) {
+            array2[i] = scanner.nextInt();
+        }
+        // Print elements alternatively
+        for (int i = 0; i < N; i++) {
+            if (i % 2 == 0) {
+                System.out.print(array1[i] + " ");
+            } else {
+                System.out.print(array2[i] +" ");
+            }
+        }
+        scanner.close();
+    }
+}
+
+
+
+// Time Complexity:-O(N) because reading N elements into each array and printing them alternatively involves iterating through the arrays.
+
+// Space complexity:-O(N) due to the storage of two arrays, each of size N.
+
+
+
+
+
+
+// Question:-
 // Take n as an integer input. Declare the first array of size n that stores values of int data-type. Then take n integer inputs and store them in the array one by one.
 
 // Declare the second array of size n that stores values of int data-type. Then take n integer inputs and store them in the array one by one.
@@ -67,40 +108,3 @@
 // Sample Output 1
 
 // 1 12 3 14 5 16 7 18 9 20
-
-import java.util.*;
-
-public class Q5 {
-
-     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Read the size of the arrays
-        int N = scanner.nextInt();
-
-        // Initialize arrays of size N
-        int[] array1 = new int[N];
-        int[] array2 = new int[N];
-
-        // Read elements of array1
-        for (int i = 0; i < N; i++) {
-            array1[i] = scanner.nextInt();
-        }
-
-        // Read elements of array2
-        for (int i = 0; i < N; i++) {
-            array2[i] = scanner.nextInt();
-        }
-
-        // Print elements alternatively
-        for (int i = 0; i < N; i++) {
-            if (i % 2 == 0) {
-                System.out.print(array1[i] + " ");
-            } else {
-                System.out.print(array2[i] +" ");
-            }
-        }
-
-        scanner.close();
-    }
-}

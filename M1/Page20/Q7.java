@@ -1,39 +1,5 @@
 // // HW_Print All Composite Number of Array
 
-// Given an array print all composite number present in the array
-
-// Input Format
-
-// First line contains an integer N representing the size
-
-// Second line contains N integer values of array
-
-// Constraints
-
-// NA
-
-// Output Format
-
-// print all value of array which are composite.
-
-// Sample Input 0
-
-// 5
-// 1
-// 4
-// 8
-// 11
-// 14
-// Sample Output 0
-
-// 4
-// 8
-// 14
-// Explanation 0
-
-// 4,8,14 Are the composite number present in array
-
-
 import java.util.*;
 
 public class Q7 {
@@ -79,3 +45,35 @@ public class Q7 {
         scanner.close();
     }
 }
+
+// Time Complexity: O(n * √m) where n is the number of elements in the array and m is the maximum value in the array, due to checking each number in the array for compositeness using trial division up to its square root.
+
+// Space Complexity: O(n) because of the storage required for the array of size n.
+
+
+
+
+
+// Given an array print all composite number present in the array
+// Input Format
+// First line contains an integer N representing the size
+// Second line contains N integer values of array
+// Constraints
+// NA
+// Output Format
+// print all value of array which are composite.
+// Sample Input 0
+// 5
+// 1
+// 4
+// 8
+// 11
+// 14
+// Sample Output 0
+
+// 4
+// 8
+// 14
+// Explanation 0
+
+// 4,8,14 Are the composite number present in array

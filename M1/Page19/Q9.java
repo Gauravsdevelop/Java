@@ -1,32 +1,4 @@
 // // HW_Print Even Array Elements inline
-// Take n as an integer input. Declare an array of size n that stores value of int data-type. Then take n integer inputs and store them in the array one by one.
-
-// Then print all the elements of the array from the starting which are even.
-
-// Input Format
-
-// n=5 10 21 31 42 50
-
-// Constraints
-
-// NA
-
-// Output Format
-
-// 10 42 50
-
-// Sample Input 0
-
-// 6
-// 10
-// 11
-// 13
-// 14
-// 15
-// 19
-// Sample Output 0
-
-// 10 14
 
 import java.util.*;
 
@@ -57,3 +29,44 @@ public class Q9 {
         scanner.close();
     }
 }
+
+
+
+
+// Time Complexity:-O(N) because both reading N elements into the array and checking each element to print even numbers involve iterating through the array.
+
+
+// Space complexity:- O(N) due to the storage of the array of size N.
+
+
+
+
+// Question:-
+// Take n as an integer input. Declare an array of size n that stores value of int data-type. Then take n integer inputs and store them in the array one by one.
+
+// Then print all the elements of the array from the starting which are even.
+
+// Input Format
+
+// n=5 10 21 31 42 50
+
+// Constraints
+
+// NA
+
+// Output Format
+
+// 10 42 50
+
+// Sample Input 0
+
+// 6
+// 10
+// 11
+// 13
+// 14
+// 15
+// 19
+// Sample Output 0
+
+// 10 14

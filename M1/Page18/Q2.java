@@ -1,8 +1,6 @@
 // //HW_Print count of digits and digits line by line.
 import java.util.*;
-
 public class Q2 {
-
    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
@@ -20,12 +18,10 @@ public class Q2 {
         printDigits(number);
         scanner.close();
     }
-
     // Function to count number of digits
     public static int countDigits(long number) {
         return String.valueOf(number).length();
     }
-    
     // Function to print each digit from ones place to largest place
     public static void printDigits(long number) {
         String numString = String.valueOf(number);
@@ -34,6 +30,7 @@ public class Q2 {
         }
     }
 }
+
 //Time Complexity: 𝑂(𝑑) , where d is the number of digits in the input number.
 //Space Complexity: 𝑂(𝑑) , due to the string conversion used in both functions.
 
