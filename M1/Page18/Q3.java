@@ -1,5 +1,58 @@
 // // Find GCD 3    //Greatest Common Divisor  //HCF heigest common factor
 
+import java.util.*;
+
+public class Q3 {
+
+    public static int gcd(int a, int b) { // a= 100 b = 35
+        while (b != 0) {     
+            int temp = b;  
+            b = a % b;    
+            a = temp;      
+        }
+        return a;
+    }
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Input number of test cases
+      
+        int T = scanner.nextInt();
+        
+        // Process each test case
+        for (int i = 0; i < T; i++) {
+            // Input x and y
+            int x = scanner.nextInt();
+            int y = scanner.nextInt();
+            
+            // Calculate GCD of x and y
+            int result = gcd(x, y);
+            
+            // Print GCD
+            System.out.println( result);
+        }
+        
+        scanner.close();
+    }
+}
+
+//Time Complexity:O(T×log(min(x,y))) because each GCD computation takes O(log(min(x,y))) time, and there are T test cases.
+//Space Complexity:  O(1) because the algorithm uses a constant amount of extra space for a few integer variables.
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Question
 // Take two integer inputs x and y. Then print the gcd of these two numbers as an integer output.
 
 // Input Format
@@ -40,41 +93,3 @@
 
 
 
-
-
-import java.util.*;
-
-public class Q3 {
-
-    public static int gcd(int a, int b) { // a= 100 b = 35
-        while (b != 0) {     
-            int temp = b;  
-            b = a % b;    
-            a = temp;      
-        }
-        return a;
-    }
-    
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        // Input number of test cases
-      
-        int T = scanner.nextInt();
-        
-        // Process each test case
-        for (int i = 0; i < T; i++) {
-            // Input x and y
-            int x = scanner.nextInt();
-            int y = scanner.nextInt();
-            
-            // Calculate GCD of x and y
-            int result = gcd(x, y);
-            
-            // Print GCD
-            System.out.println( result);
-        }
-        
-        scanner.close();
-    }
-}

@@ -119,3 +119,13 @@ public class Q9 {
         scanner.close();
     }
 }
+
+//Time Complexity: O(n×m) where n is the number of integers to process and m is the largest integer being checked for primality, as each prime check runs in O(𝑚) time and there are n checks.
+
+//Space Complexity: O(1) because only a few integer variables are used, regardless of the input size.
+
+
+
+
+
+

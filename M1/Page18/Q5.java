@@ -1,4 +1,37 @@
 // // Print all unique prime factors
+import java.util.*;
+
+public class Q5 {
+    static void isPrime(int n)
+    {
+        for(int i=2; i<n; i++)
+        {
+            if(n % i ==0)
+            {
+                return;
+            }
+        }
+        System.out.println(n);
+    }
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        for(int i=2; i<n; i++)
+        {
+            if(n % i == 0)
+            {
+                isPrime(i);
+            }
+        }
+    }
+}
+//Time Complexity: 𝑂(𝑛2) due to the nested loop and the 𝑂(𝑛)O(n) time complexity of isPrime().
+//Space Complexity: 𝑂(1) because only a few integer variables are used.
+
 // Take a whole number N as an integer input and then print all the unique prime factors of N such that each prime factor is printed in a separate line.
 
 // Input Format
@@ -59,51 +92,64 @@
 // 5
 // 13
 
-import java.util.*;
 
-public class Q5 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import java.util.*;
+
+// public class Q5 {
 
    
-         public static void main(String[] args) {
-      Scanner sc = new Scanner(System.in);
-      
-        int number = sc.nextInt();
-        
-        //System.out.println(number);
-        findUniquePrimeFactors(number);
-        
-        sc.close();
-    }
+//          public static void main(String[] args) {
+//       Scanner sc = new Scanner(System.in);
+//         int number = sc.nextInt();
+//         //System.out.println(number);
+//         findUniquePrimeFactors(number);
+//         sc.close();
+//     }
+//     public static void findUniquePrimeFactors(int number) {
+//         // Print 2 as a special case if it's a factor
+//         boolean printed2 = false;
+//         while (number % 2 == 0) {
+//             if (!printed2) {
+//                 System.out.println(2 + " ");
+//                 printed2 = true;
+//             }
+//             number /= 2;
+//         }
     
-    public static void findUniquePrimeFactors(int number) {
-        // Print 2 as a special case if it's a factor
-        boolean printed2 = false;
-        while (number % 2 == 0) {
-            if (!printed2) {
-                System.out.println(2 + " ");
-                printed2 = true;
-            }
-            number /= 2;
-        }
-        
-        // Check for odd factors from 3 onwards
-        for (int i = 3; i <= Math.sqrt(number); i += 2) {
-            boolean printed = false;
-            while (number % i == 0) {
-                if (!printed) {
-                    System.out.println(i + " ");
-                    printed = true;
-                }
-                number /= i;
-            }
-        }
+//         // Check for odd factors from 3 onwards
+//         for (int i = 3; i <= Math.sqrt(number); i += 2) {
+//             boolean printed = false;
+//             while (number % i == 0) {
+//                 if (!printed) {
+//                     System.out.println(i + " ");
+//                     printed = true;
+//                 }
+//                 number /= i;
+//             }
+//         }
         
         // If the remaining number is a prime number greater than 2
-        if (number > 2) {
-            System.out.println(number);
-        }
-    }
-}
+//         if (number > 2) {
+//             System.out.println(number);
+//         }
+//     }
+// }
 
 
 // import java.util.*;

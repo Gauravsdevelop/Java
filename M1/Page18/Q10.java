@@ -1,4 +1,32 @@
 // // Print the array elements linewise
+
+import java.util.*;
+public class Q10 {
+ public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        // Read the size of the array
+        int N = scanner.nextInt();
+        // Initialize an array of size N
+        int[] arr = new int[N];
+        // Read N integers into the array
+        for (int i = 0; i < N; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        // Print each element of the array in a new line
+        for (int i = 0; i < N; i++) {
+            System.out.println(arr[i]);
+        } 
+        scanner.close();
+    }
+}
+
+//Time Complexity: O(N) because both reading the integers into the array and printing them involve iterating through the array of size N.
+
+// Space Complexity: O(N) due to the storage of the array of size 
+
+
+
+// Question
 // Take n as an integer input. Declare an array of size n that stores value of int data-type.
 
 // Then take n integer inputs and store them in the array one by one.
@@ -47,30 +75,3 @@
 // More
  
 
-
-import java.util.*;
-
-public class Q10 {
-
- public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Read the size of the array
-        int N = scanner.nextInt();
-        
-        // Initialize an array of size N
-        int[] arr = new int[N];
-        
-        // Read N integers into the array
-        for (int i = 0; i < N; i++) {
-            arr[i] = scanner.nextInt();
-        }
-        
-        // Print each element of the array in a new line
-        for (int i = 0; i < N; i++) {
-            System.out.println(arr[i]);
-        }
-        
-        scanner.close();
-    }
-}
