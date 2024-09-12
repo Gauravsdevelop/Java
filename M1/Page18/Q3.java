@@ -46,11 +46,11 @@ import java.util.*;
 
 public class Q3 {
 
-    public static int gcd(int a, int b) {
-        while (b != 0) {
-            int temp = b;
-            b = a % b;
-            a = temp;
+    public static int gcd(int a, int b) { // a= 100 b = 35
+        while (b != 0) {     
+            int temp = b;  
+            b = a % b;    
+            a = temp;      
         }
         return a;
     }
@@ -65,9 +65,7 @@ public class Q3 {
         // Process each test case
         for (int i = 0; i < T; i++) {
             // Input x and y
-           
             int x = scanner.nextInt();
-           
             int y = scanner.nextInt();
             
             // Calculate GCD of x and y
