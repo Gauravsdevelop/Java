@@ -1,36 +1,4 @@
 // // Sum of all Elements of Array
-
-// You are given an array, and you have to calculate the sum of all elements in the array.
-
-// Input Format
-
-// First line consists of size of array n.
-
-// Second line consists Elements of array (seperated by space).
-
-// Constraints
-
-// 1 <= N <= 10^3
-// Output Format
-
-// Returns a sum
-
-// Sample Input 0
-
-// 3
-// 9 8 9
-// Sample Output 0
-
-// 26
-// Sample Input 1
-
-// 3
-// 4 2 1
-// Sample Output 1
-
-// 7
-
-
 import java.util.*;
 
 public class Q1 {
@@ -63,3 +31,40 @@ public class Q1 {
         scanner.close();
     }
 }
+
+// Time Complexity: O(n) — Reading and summing elements both require linear time.
+// Space Complexity: O(n) — The array arr requires linear space
+
+
+
+
+// You are given an array, and you have to calculate the sum of all elements in the array.
+
+// Input Format
+
+// First line consists of size of array n.
+
+// Second line consists Elements of array (seperated by space).
+
+// Constraints
+
+// 1 <= N <= 10^3
+// Output Format
+
+// Returns a sum
+
+// Sample Input 0
+
+// 3
+// 9 8 9
+// Sample Output 0
+
+// 26
+// Sample Input 1
+
+// 3
+// 4 2 1
+// Sample Output 1
+
+// 7
+

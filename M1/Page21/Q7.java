@@ -1,4 +1,50 @@
 // // HW_GKSTR36 Count_IndexValue_Element
+import java.util.*;
+
+public class Q7 {
+
+      public static int countEqualValueIndex(int[] arr, int n) {
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] == i) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read the size of the array
+        int n = scanner.nextInt();
+
+        // Read the array elements
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        // Count the number of elements with value equal to index
+        int count = countEqualValueIndex(arr, n);
+
+        // Print the result
+        System.out.println(count);
+
+        scanner.close();
+    }
+}
+
+// Time Complexity: O(n) — Counting elements with values equal to their indices requires iterating through all n elements.
+// Space Complexity: O(1) — Only a few additional variables are used.
+
+
+
+
+
+
+
+
 
 // Given an integer n, the task is to define an array arr[] of size n &
 
@@ -37,39 +83,3 @@
 // Explanation 0
 
 // Since the array is of length 5 and it's elements are {4, 1, 5, 3, 5} therefore count of elements whose value is equal to it's index value will be 2, As elements at index 1 and 3 are the only ones with value equal to its index value (arr[1] == 1, arr[3] == 3)
-
-import java.util.*;
-
-public class Q7 {
-
-      public static int countEqualValueIndex(int[] arr, int n) {
-        int count = 0;
-        for (int i = 0; i < n; i++) {
-            if (arr[i] == i) {
-                count++;
-            }
-        }
-        return count;
-    }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Read the size of the array
-        int n = scanner.nextInt();
-
-        // Read the array elements
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = scanner.nextInt();
-        }
-
-        // Count the number of elements with value equal to index
-        int count = countEqualValueIndex(arr, n);
-
-        // Print the result
-        System.out.println(count);
-
-        scanner.close();
-    }
-}

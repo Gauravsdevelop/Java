@@ -1,37 +1,5 @@
 // // HW_Minimum in Array
 
-// Declare the first array of size n that stores values of int data-type. Then take n integer inputs and store them in the array one by one. Print the minimum amongst all the elements of the array.
-
-// Input Format
-
-// First line consists N as Size of Array
-
-// Second line consists N Integer value as Arr[i] values
-
-// Constraints
-
-// NA
-
-// Output Format
-
-// Print the Minimum element in array
-
-// Sample Input 0
-
-// 5
-// 10
-// 4
-// 9
-// 55
-// 21
-// Sample Output 0
-
-// 4
-// Explanation 0
-
-// 4 is the minimum among all these
-
-
 import java.util.*;
 
 public class Q9 {
@@ -66,3 +34,41 @@ public class Q9 {
 
         scanner.close();
     }}
+
+    // Time Complexity: O(n) — Finding the minimum element requires iterating through all n elements.
+    // Space Complexity: O(1) — Only a few additional variables are used.
+
+
+
+
+// Declare the first array of size n that stores values of int data-type. Then take n integer inputs and store them in the array one by one. Print the minimum amongst all the elements of the array.
+
+// Input Format
+
+// First line consists N as Size of Array
+
+// Second line consists N Integer value as Arr[i] values
+
+// Constraints
+
+// NA
+
+// Output Format
+
+// Print the Minimum element in array
+
+// Sample Input 0
+
+// 5
+// 10
+// 4
+// 9
+// 55
+// 21
+// Sample Output 0
+
+// 4
+// Explanation 0
+
+// 4 is the minimum among all these
+

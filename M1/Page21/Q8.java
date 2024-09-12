@@ -1,5 +1,48 @@
 // // HW_Print Sum of Elements Except Itself
 
+import java.util.*;
+public class Q8 {
+
+     public static void printSumWithoutIndex(int[] arr, int n) {
+        for (int i = 0; i < n; i++) {
+            int sum = 0;
+            for (int j = 0; j < n; j++) {
+                if (j != i) {
+                    sum += arr[j];
+                }
+            }
+            System.out.println(sum);
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read the size of the array
+        int n = scanner.nextInt();
+
+        // Declare and initialize the array
+        int[] arr = new int[n];
+
+        // Read the array elements
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        // Print the sum of all elements except the element at each index
+        printSumWithoutIndex(arr, n);
+
+        scanner.close();
+    }
+}
+
+// Time Complexity: O(n^2) — Calculating sums involves a nested loop where each element is processed for every other element.
+// Space Complexity: O(1) — Only a few additional variables are used.
+
+
+
+
+
 // Declare the first array of size n that stores values of int data-type. Then take n integer inputs and store them in the array one by one.
 
 // For each index print the sum of all the elements except the element present at that index..
@@ -42,40 +85,3 @@
 // 26-8=18
 
 // 26-9=17
-
-import java.util.*;
-
-public class Q8 {
-
-     public static void printSumWithoutIndex(int[] arr, int n) {
-        for (int i = 0; i < n; i++) {
-            int sum = 0;
-            for (int j = 0; j < n; j++) {
-                if (j != i) {
-                    sum += arr[j];
-                }
-            }
-            System.out.println(sum);
-        }
-    }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Read the size of the array
-        int n = scanner.nextInt();
-
-        // Declare and initialize the array
-        int[] arr = new int[n];
-
-        // Read the array elements
-        for (int i = 0; i < n; i++) {
-            arr[i] = scanner.nextInt();
-        }
-
-        // Print the sum of all elements except the element at each index
-        printSumWithoutIndex(arr, n);
-
-        scanner.close();
-    }
-}
