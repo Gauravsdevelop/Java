@@ -1,5 +1,38 @@
 // HW_Counting Smaller Numbers in an Array
 
+import java.util.*;
+
+public class Q10 {
+
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+        
+        for(int i=0;i<n;i++){
+            int count=0;
+            for(int j=n-1;j>=0;j--){
+                if(a[i]>a[j] && j!=i){
+                    count++;
+                }
+            }  System.out.print(count+" ");
+        }
+      
+    }
+}
+
+// Time Complexity: O(N^2) due to the two nested loops. The outer loop runs N times, and for each iteration, the inner loop runs N times.
+// Space Complexity: O(1) as no additional space is used other than the input array.
+
+
+
+
+//Question
+
 // Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i]
 
 // NOTE :-
@@ -9,24 +42,19 @@
 // Input Format
 
 // First line contains an integer N representing the size of array.
-
 // Second line contains N number of integers representing the elements of array.
 
 // Constraints
-
 // 0 <= N <= 10000
-
 // 0 <= arr[i] <= 10000
-// Output Format
 
+// Output Format
 // Print the required answer.
 
 // Sample Input 0
-
 // 5
 // 8 1 2 2 3
 // Sample Output 0
-
 // 4 0 1 1 3
 
 // import java.util.*;
@@ -73,29 +101,3 @@
 //         scanner.close();
 //     }
 // }
-
-
-import java.util.*;
-
-public class Q10 {
-
-    public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int a[]=new int[n];
-        for(int i=0;i<n;i++){
-            a[i]=sc.nextInt();
-        }
-        
-        for(int i=0;i<n;i++){
-            int count=0;
-            for(int j=n-1;j>=0;j--){
-                if(a[i]>a[j] && j!=i){
-                    count++;
-                }
-            }  System.out.print(count+" ");
-        }
-      
-    }
-}

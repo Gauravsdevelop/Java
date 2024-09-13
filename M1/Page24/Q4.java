@@ -1,35 +1,4 @@
 // // Store Maximum
-// Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much maximum water it can trap after raining.
-
-// image
-
-// NOTE :-
-
-// After answering the question, attempt the related question in the linked resource to improve your understanding of the question . Click here
-
-// Input Format
-
-// First line contains an integer number n representing size of array.
-
-// Second line contains integer n integer inputs representing elements of array.
-
-// Constraints
-
-// 1 <= N <= 1000
-
-// 0 <= arr[i] <= 100000
-// Output Format
-
-// Returns an Integer number
-
-// Sample Input 0
-
-// 12
-// 0 1 0 2 1 0 1 3 2 1 2 1
-// Sample Output 0
-
-// 6
-
 import java.util.*;
 
 public class Q4 {
@@ -80,3 +49,41 @@ public class Q4 {
         return trappedWater;
     }
 }
+
+// Time Complexity:
+// O(N): The algorithm makes a single pass through the array using the two-pointer approach, where N is the size of the height array.
+// Space Complexity:
+// O(1): The solution uses a constant amount of additional space to store variables like left, right, leftMax, rightMax, and trappedWater. No extra space is required except for the input array.
+
+
+
+
+
+//question
+// Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much maximum water it can trap after raining.
+
+// image
+
+// NOTE :-
+
+// After answering the question, attempt the related question in the linked resource to improve your understanding of the question . Click here
+
+// Input Format
+
+// First line contains an integer number n representing size of array.
+// Second line contains integer n integer inputs representing elements of array.
+
+// Constraints
+// 1 <= N <= 1000
+// 0 <= arr[i] <= 100000
+
+// Output Format
+
+// Returns an Integer number
+// Sample Input 0
+
+// 12
+// 0 1 0 2 1 0 1 3 2 1 2 1
+
+// Sample Output 0
+// 6

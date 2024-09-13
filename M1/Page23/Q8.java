@@ -1,33 +1,28 @@
 // // HW_Find Difference 1
 
+
+
 // Take the array and k as an integer input. Given condition is that the array contains all the unique elements. Then take the sum as an integer input and print all the permutations of the pairs whose absolute difference is k.
 
 // Input Format
-
 // First line contains an integer number n representing size of array.
-
 // Second line contains n integer numbers representing elements of the array.
-
 // Third line contains an integer number k
 
 // Constraints
-
 // 1 <= n <= 100000
-
 // 0 <= array[index] <= 100000
-
 // 0 <= k <= 1000000
-// Output Format
 
+// Output Format
 // Print the required permutation in different line.
 
 // Sample Input 0
-
 // 5
 // 1 2 3 4 5
 // 3
-// Sample Output 0
 
+// Sample Output 0
 // 1 4
 // 2 5
 // 4 1
@@ -35,11 +30,8 @@
 // Explanation 0
 
 // |arr[0]-arr[3]| = |1-4| = 3
-
 // |arr[1]-arr[4]| = |2-5| = 3
-
 // |arr[3]-arr[1]| = |4-1| = 3
-
 // |arr[4]-arr[1]| = |5-2| = 3
 
 import java.util.*;

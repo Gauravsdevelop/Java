@@ -1,44 +1,5 @@
 // // HW_Find Difference 2
 
-// Take an array as input. Given condition is that the array contains all the unique elements. Then take k as an integer input and print all the combinations of the pairs whose absolute difference is k.
-
-// Input Format
-
-// First line contains an integer number n representing size of array.
-
-// Second line contains n integer numbers representing elements of the array.
-
-// Third line contains an integer number k
-
-// Constraints
-
-// 1 <= n <= 100000
-
-// 0 <= array[index] <= 100000
-
-// 0 <= k <= 1000000
-// Output Format
-
-// Print the required combinations in different line.
-
-// Sample Input 0
-
-// 5
-// 1 2 3 4 5
-// 3
-// Sample Output 0
-
-// 1 4
-// 2 5
-// Explanation 0
-
-// |arr[0] - arr[3]| = |1 - 4| = 3
-
-// |arr[1] - arr[4]| = |2 - 5| = 3
-
-// A
-
-
 
 import java.util.*;
 
@@ -61,3 +22,45 @@ public class Q9 {
     }
 }
 }
+
+// Time Complexity: O(N^2) due to the two nested loops iterating over all possible pairs in the array.
+
+// Space Complexity: O(1) because no extra space is used apart from the input array.
+
+
+
+
+
+
+//Question
+// Take an array as input. Given condition is that the array contains all the unique elements. Then take k as an integer input and print all the combinations of the pairs whose absolute difference is k.
+
+// Input Format
+// First line contains an integer number n representing size of array.
+// Second line contains n integer numbers representing elements of the array.
+// Third line contains an integer number k
+
+// Constraints
+// 1 <= n <= 100000
+// 0 <= array[index] <= 100000
+
+// 0 <= k <= 1000000
+
+//Output Format
+// Print the required combinations in different line.
+
+// Sample Input 0
+
+// 5
+// 1 2 3 4 5
+// 3
+// Sample Output 0
+
+// 1 4
+// 2 5
+
+// Explanation 0
+// |arr[0] - arr[3]| = |1 - 4| = 3
+// |arr[1] - arr[4]| = |2 - 5| = 3
+
+// A
