@@ -1,44 +1,4 @@
 // // Add One
-// Take an array arr of size N as input which represents a large number.
-
-// Add 1 (one) to this large number and print the resultant array.
-
-// eg:- [4,2,3,6,5,8,7,1,5,3,9,6] In this case answer must be [4,2,3,6,5,8,7,1,5,3,9,7]
-
-// Note: The large integer does not contain any leading 0's in the array.
-
-// NOTE:- After answering the question, attempt the related question in the linked resource to improve your understanding of this question . Click here
-
-// Input Format
-
-// First line contains an integer N, which is the size of the array.
-
-// Second line contains N integers, depicting the elements of the array.
-
-// Constraints
-
-// 1 <= N <= 1000
-
-// 0 <= arr[i] <= 9
-// Output Format
-
-// The resultant array.
-
-// Sample Input 0
-
-// 5
-// 1 2 3 4 5 
-// Sample Output 0
-
-// 1 2 3 4 6
-// Sample Input 1
-
-// 1
-// 9
-// Sample Output 1
-
-// 1 0
-
 
 import java.util.*;
 
@@ -76,3 +36,40 @@ public class Q4 {
         System.out.println(Arrays.toString(arr).replaceAll("[\\[\\],]", ""));
     }
 }
+// Time Complexity: O(N), where N is the size of the array. This is due to the single pass through the array and the resizing operation in the worst case.
+// Space Complexity: O(N) due to the creation of the new result array when there's a carry left. If there's no carry, the space complexity is O(1) as the operations are done in place.
+
+
+
+
+
+//Question
+// Take an array arr of size N as input which represents a large number.
+// Add 1 (one) to this large number and print the resultant array.
+// eg:- [4,2,3,6,5,8,7,1,5,3,9,6] In this case answer must be [4,2,3,6,5,8,7,1,5,3,9,7]
+// Note: The large integer does not contain any leading 0's in the array.
+// NOTE:- After answering the question, attempt the related question in the linked resource to improve your understanding of this question .Click here
+
+// Input Format
+// First line contains an integer N, which is the size of the array.
+// Second line contains N integers, depicting the elements of the array.
+
+// Constraints
+// 1 <= N <= 1000
+// 0 <= arr[i] <= 9
+
+// Output Format
+// The resultant array.
+// Sample Input 0
+// 5
+// 1 2 3 4 5 
+
+// Sample Output 0
+// 1 2 3 4 6
+
+// Sample Input 1
+// 1
+// 9
+
+// Sample Output 1
+// 1 0

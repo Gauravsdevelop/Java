@@ -1,44 +1,4 @@
 // // Update query 1
-// Given an array of size n with intial values. Take left, right as integer inputs such that 0 <= left, right < arr.length and also take x as an integer input.
-
-// Then update the given array from the index-left till the index-right(both left index and right index included) with the element x. In the end print all the elements of the array such that each element is printed in a separate line.
-
-// Input Format
-
-// First line contains an integer number n representing size of array.
-
-// Second line contains n integer numbers representing elements of an array.
-
-// Third line contains two Integer number representing range i.e left and right.
-
-// Fourth line contains an integer number x.
-
-// Constraints
-
-// 1 <= n <= 100000
-
-// 0 <= array[index] <= 100000
-
-// 0 <= left <= right < n
-
-// 0 <= x <= 100000
-// Output Format
-
-// Print N numbers in a single line.
-
-// Sample Input 0
-
-// 10
-// 1 2 3 4 5 6 7 8 9 10
-// 2 8
-// 0
-// Sample Output 0
-
-// 1 2 0 0 0 0 0 0 0 10
-// Explanation 0
-
-// We are given range of 2 to 8, so we update all the index from left to right with given value of x i.e 0. And printed the answer in sinle line.
-
 import java.util.*;
 
 public class Q3 {
@@ -54,7 +14,7 @@ public class Q3 {
         for (int i = 0; i < n; i++) {
             array[i] = scanner.nextInt();
         }
-        
+
         // Read the left and right indices
         int left = scanner.nextInt();
         int right = scanner.nextInt();
@@ -73,3 +33,42 @@ public class Q3 {
         }
     }
 }
+
+// Time Complexity: O(n) where n is the size of the array, since you're iterating over the array twice (once for reading the input and once for printing). The update within the range between left and right takes O(right - left + 1) time, but overall, this is still linear.
+// Space Complexity: O(1) since the array is updated in place and no additional space is used besides the input array.
+
+
+
+
+
+//Question
+// Given an array of size n with intial values. Take left, right as integer inputs such that 0 <= left, right < arr.length and also take x as an integer input.
+
+// Then update the given array from the index-left till the index-right(both left index and right index included) with the element x. In the end print all the elements of the array such that each element is printed in a separate line.
+
+// Input Format
+// First line contains an integer number n representing size of array.
+// Second line contains n integer numbers representing elements of an array.
+// Third line contains two Integer number representing range i.e left and right.
+// Fourth line contains an integer number x.
+
+// Constraints
+// 1 <= n <= 100000
+// 0 <= array[index] <= 100000
+// 0 <= left <= right < n
+// 0 <= x <= 100000
+
+// Output Format
+// Print N numbers in a single line.
+
+// Sample Input 0
+// 10
+// 1 2 3 4 5 6 7 8 9 10
+// 2 8
+// 0
+
+// Sample Output 0
+// 1 2 0 0 0 0 0 0 0 10
+
+// Explanation 0
+// We are given range of 2 to 8, so we update all the index from left to right with given value of x i.e 0. And printed the answer in sinle line.

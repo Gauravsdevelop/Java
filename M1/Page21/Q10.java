@@ -5,7 +5,6 @@ public class Q10 {
 
     public static int removeElement(int[] nums, int val) {
         int k = 0; // Initialize k to 0
-        
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != val) {
                 nums[k] = nums[i]; // Place the non-matching element at index k

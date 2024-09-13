@@ -1,7 +1,7 @@
 Q1  :- Check Characterstic
-Q2  :- Solve Array
+Q2  :- Solve Array (())
 Q3  :- Update query 1
-Q4  :- Add One
+Q4  :- Add One (())
 Q5  :- HW_Perform Operations 1
 Q6  :- HW_Update query 2
 Q7  :- HW_Element as an index
