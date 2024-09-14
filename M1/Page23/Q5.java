@@ -4,11 +4,11 @@ import java.util.*;
 
 public class Q5 {
     
-    static void findPermutation(int n, int [] arr, int k) {
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+    static void findPermutation(int n, int [] arr, int k) {  // (5,(// 1 2 3 4 5),8)
+        for (int i = 0; i < n; i++) {           // 1 2 3 4 5
+            for (int j = 0; j < n; j++) {       // 1 2 3 4 5
                 if ((arr[i] + arr[j]) == k) {
-                    System.out.println(arr[i] + " " + arr[j]);
+                    System.out.println(arr[i] + " " + arr[j]); //3 5    4 4    5 3
                 }
             }
         }
@@ -16,14 +16,14 @@ public class Q5 {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        int n = scn.nextInt();
+        int n = scn.nextInt();                  //5
         int [] arr = new int [n];
-        for (int i = 0; i < n; i++) {
-            arr [i] = scn.nextInt();
+        for (int i = 0; i < n; i++) {     
+            arr [i] = scn.nextInt();           //// 1 2 3 4 5
         }
-        int k = scn.nextInt();
+        int k = scn.nextInt();               //8
         scn.close();
-        findPermutation(n, arr, k);
+        findPermutation(n, arr, k);        // (5,(// 1 2 3 4 5),8)
     }
 }
 

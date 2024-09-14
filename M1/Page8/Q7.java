@@ -1,4 +1,5 @@
 // // HW_Print first n multiples of 11.
+
 // Once upon a time, there was a young programmer named Ben who was passionate about coding. One day, his mentor challenged him to write a program that would print the first N multiples of 11.
 
 // Ben approached the problem by using a loop to iterate over the numbers and multiplying each number by 11 to generate the multiples. As the loop ran, he printed each multiple to the console, ensuring that only the first N multiples were printed.

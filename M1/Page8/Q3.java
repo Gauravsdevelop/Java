@@ -39,3 +39,5 @@ public class Q3 {
        
     }
 }
+// Time complexity: O(1), because the loop runs a constant 10 times regardless of the input.
+// Space complexity: O(1), as only a few variables are used and no significant memory is consumed.

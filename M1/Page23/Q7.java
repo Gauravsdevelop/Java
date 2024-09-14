@@ -1,4 +1,5 @@
 // // HW_Count Odd Pair
+//two pointer
 import java.util.*;
 
 public class Q7 {

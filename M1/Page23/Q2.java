@@ -11,26 +11,26 @@ public class Q2 {
         int n = scanner.nextInt();  //5
         // Initialize arrays
         int[] numbers = new int[n];  // 12 13 14 15 16
-        int[] indexes = new int[n];
+        int[] indexes = new int[n];  // 0  1  2  3  4
         // Read numbers array
         for (int i = 0; i < n; i++) {          
-            numbers[i] = scanner.nextInt();       
+            numbers[i] = scanner.nextInt();       // 12 13 14 15 16 
         }
         // Read indexes array
         for (int i = 0; i < n; i++) {
-            indexes[i] = scanner.nextInt();
+            indexes[i] = scanner.nextInt();       // 0  1  2  3  4
         }
         // Create target array
-        int[] target = new int[n];
+        int[] target = new int[n];       //5
         
         // Populate target array based on numbers and indexes
-        for (int i = 0; i < n; i++) {
-            target[indexes[i]] = numbers[i];
+        for (int i = 0; i < n; i++) {       // 0  1  2  3  4  ==>   // 12 13 14 15 16 
+            target[indexes[i]] = numbers[i];    
         }
         
         // Print target array
         for (int i = 0; i < n; i++) {
-            System.out.print(target[i] + " ");
+            System.out.print(target[i] + " ");     // 12 13 14 15 16 
         }
         
         // Close scanner

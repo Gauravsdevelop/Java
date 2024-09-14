@@ -43,3 +43,6 @@ public class Q10 {
         
     }
 }
+
+// Time complexity: O(n - 5), which simplifies to O(n) in the worst case, as the loop runs from n to 5.
+// Space complexity: O(1), because only a few variables are used and no additional significant memory is consumed.

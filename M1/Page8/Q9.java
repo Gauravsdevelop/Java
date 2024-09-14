@@ -29,7 +29,7 @@ import java.util.*;
 public class Q9 {
 
     public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+     
           Scanner scanner = new Scanner(System.in);
         
         // Read integer input N
@@ -45,3 +45,6 @@ public class Q9 {
         }
     }
 }
+
+// Time complexity: O((N - 13) / 5), which simplifies to O(N) in the worst case, because the loop runs a number of times proportional to N.
+// Space complexity: O(1), as only a few variables are used and no significant additional memory is consumed.

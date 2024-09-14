@@ -1,7 +1,44 @@
 // // HW_Find Difference 1
 
+import java.util.Scanner;
+
+public class Q8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input the size of the array
+        int n = sc.nextInt();
+
+        // Initialize the array
+        int[] arr = new int[n];
+
+        // Input the elements of the array
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();   //1 2 3 4 5
+        }
+
+        // Input the integer k
+        int k = sc.nextInt();   //3
+
+        // Brute-force: Check all pairs for the absolute difference k
+        for (int i = 0; i < n; i++) {
+            for (int j = 0 ; j < n; j++) {
+                if (Math.abs(arr[i] - arr[j]) == k) {
+                    System.out.println(arr[i] + " " + arr[j]);  // 1 4  2 5  4 1  5 2
+                }
+            }
+        }
+
+        sc.close();
+    }
+}
+ 
+ 
+// Time complexity: O(n²), because there are two nested loops iterating over the array, leading to n × n comparisons.
+// Space complexity: O(n), as the space is used to store the array of size n, with no additional large data structures.
 
 
+//Question
 // Take the array and k as an integer input. Given condition is that the array contains all the unique elements. Then take the sum as an integer input and print all the permutations of the pairs whose absolute difference is k.
 
 // Input Format
@@ -34,84 +71,84 @@
 // |arr[3]-arr[1]| = |4-1| = 3
 // |arr[4]-arr[1]| = |5-2| = 3
 
-import java.util.*;
+// import java.util.*;
 
-public class Q8 {
-  public static void findPairsWithDifference(int[] nums, int k) {
-        Set<Integer> numSet = new HashSet<>();
+// public class Q8 {
+//   public static void findPairsWithDifference(int[] nums, int k) {
+//         Set<Integer> numSet = new HashSet<>();
         
-        // Add all elements to the HashSet
-        for (int num : nums) {
-            numSet.add(num);
-        }
+//         // Add all elements to the HashSet
+//         for (int num : nums) {
+//             numSet.add(num);
+//         }
         
-        List<String> pairs = new ArrayList<>();
-        Set<String> seenPairs = new HashSet<>();
+//         List<String> pairs = new ArrayList<>();
+//         Set<String> seenPairs = new HashSet<>();
         
-        // Find pairs
-        for (int num : nums) {
-            // Check for num + k
-            if (numSet.contains(num + k)) {
-                String pair1 = num + " " + (num + k);
-                String pair2 = (num + k) + " " + num;
-                if (!seenPairs.contains(pair1)) {
-                    pairs.add(pair1);
-                    seenPairs.add(pair1);
-                }
-                if (!seenPairs.contains(pair2)) {
-                    pairs.add(pair2);
-                    seenPairs.add(pair2);
-                }
-            }
-            // Check for num - k
-            if (numSet.contains(num - k)) {
-                String pair1 = (num - k) + " " + num;
-                String pair2 = num + " " + (num - k);
-                if (!seenPairs.contains(pair1)) {
-                    pairs.add(pair1);
-                    seenPairs.add(pair1);
-                }
-                if (!seenPairs.contains(pair2)) {
-                    pairs.add(pair2);
-                    seenPairs.add(pair2);
-                }
-            }
-        }
+//         // Find pairs
+//         for (int num : nums) {
+//             // Check for num + k
+//             if (numSet.contains(num + k)) {
+//                 String pair1 = num + " " + (num + k);
+//                 String pair2 = (num + k) + " " + num;
+//                 if (!seenPairs.contains(pair1)) {
+//                     pairs.add(pair1);
+//                     seenPairs.add(pair1);
+//                 }
+//                 if (!seenPairs.contains(pair2)) {
+//                     pairs.add(pair2);
+//                     seenPairs.add(pair2);
+//                 }
+//             }
+//             // Check for num - k
+//             if (numSet.contains(num - k)) {
+//                 String pair1 = (num - k) + " " + num;
+//                 String pair2 = num + " " + (num - k);
+//                 if (!seenPairs.contains(pair1)) {
+//                     pairs.add(pair1);
+//                     seenPairs.add(pair1);
+//                 }
+//                 if (!seenPairs.contains(pair2)) {
+//                     pairs.add(pair2);
+//                     seenPairs.add(pair2);
+//                 }
+//             }
+//         }
         
-        // Sort pairs to ensure consistent output order
-        pairs.sort((a, b) -> {
-            String[] partsA = a.split(" ");
-            String[] partsB = b.split(" ");
-            if (partsA[0].equals(partsB[0])) {
-                return Integer.compare(Integer.parseInt(partsA[1]), Integer.parseInt(partsB[1]));
-            }
-            return Integer.compare(Integer.parseInt(partsA[0]), Integer.parseInt(partsB[0]));
-        });
+//         // Sort pairs to ensure consistent output order
+//         pairs.sort((a, b) -> {
+//             String[] partsA = a.split(" ");
+//             String[] partsB = b.split(" ");
+//             if (partsA[0].equals(partsB[0])) {
+//                 return Integer.compare(Integer.parseInt(partsA[1]), Integer.parseInt(partsB[1]));
+//             }
+//             return Integer.compare(Integer.parseInt(partsA[0]), Integer.parseInt(partsB[0]));
+//         });
         
-        // Print pairs
-        for (String pair : pairs) {
-            System.out.println(pair);
-        }
-    }
+//         // Print pairs
+//         for (String pair : pairs) {
+//             System.out.println(pair);
+//         }
+//     }
     
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
         
-        // Read the size of the array
-        int n = scanner.nextInt();
-        int[] nums = new int[n];
+//         // Read the size of the array
+//         int n = scanner.nextInt();
+//         int[] nums = new int[n];
         
-        // Read the elements of the array
-        for (int i = 0; i < n; i++) {
-            nums[i] = scanner.nextInt();
-        }
+//         // Read the elements of the array
+//         for (int i = 0; i < n; i++) {
+//             nums[i] = scanner.nextInt();
+//         }
         
-        // Read the integer k
-        int k = scanner.nextInt();
+//         // Read the integer k
+//         int k = scanner.nextInt();
         
-        // Find and print pairs with the given difference k
-        findPairsWithDifference(nums, k);
+//         // Find and print pairs with the given difference k
+//         findPairsWithDifference(nums, k);
         
-        scanner.close();
-    }
-}
+//         scanner.close();
+//     }
+// }

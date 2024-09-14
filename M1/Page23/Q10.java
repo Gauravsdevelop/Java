@@ -8,18 +8,18 @@ public class Q10 {
 
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        int a[]=new int[n];
+        int a[]=new int[n];     //5
         for(int i=0;i<n;i++){
-            a[i]=sc.nextInt();
+            a[i]=sc.nextInt();  // 8 1 2 2 3
         }
         
-        for(int i=0;i<n;i++){
+        for(int i=0;i<n;i++){        // 8 1 2 2 3
             int count=0;
-            for(int j=n-1;j>=0;j--){
+            for(int j=n-1;j>=0;j--){ // 8 1 2 2 3
                 if(a[i]>a[j] && j!=i){
-                    count++;
+                    count++;          
                 }
-            }  System.out.print(count+" ");
+            }  System.out.print(count+" ");       // 4 0 1 1 3
         }
       
     }

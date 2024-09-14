@@ -59,3 +59,6 @@ public class Q3 {
         }
     }
 }
+
+// Time complexity: O(N / K), as the loop runs until N becomes negative, which depends on the ratio of N to K.
+// Space complexity: O(1), since only a few variables are used and no additional significant memory is consumed.

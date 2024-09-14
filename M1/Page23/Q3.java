@@ -2,28 +2,28 @@
 import java.util.*;
 public class Q3 {
     
-    static int [] checkGreater (int n, int [] arr) {
-        int [] result = new int [n];
-        for (int i = 0; i < n; i++) {
+    static int [] checkGreater (int n, int [] arr) {   //  (5,(//1 2 3 4 5))
+        int [] result = new int [n];      
+        for (int i = 0; i < n; i++) {          //5   // 1 2 3 4 5    i
             int count = 0;
-            for (int j = i + 1; j < n; j++) {
+            for (int j = i + 1; j < n; j++) {        // 1 2 3 4 5    J
                 if (arr[j] > arr[i]) {
-                    count++;
+                    count++;    //4 3 2 1 0
                 }
             }
-            result [i] = count;
+            result [i] = count;   // 4 3 2 1 0
         }
         return result;
     }
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        int n = scn.nextInt();
-        int [] arr = new int [n];
-        for (int i = 0; i < n; i++) {
-            arr [i] = scn.nextInt();
+        int n = scn.nextInt();  //5
+        int [] arr = new int [n];  
+        for (int i = 0; i < n; i++) {  
+            arr [i] = scn.nextInt();   //1 2 3 4 5
         }
-        int [] result = checkGreater (n, arr);
+        int [] result = checkGreater (n, arr);       //  (5,(//1 2 3 4 5))
         for (int i = 0; i < n; i++) {
             System.out.print(result[i] + " ");
         }
@@ -38,7 +38,7 @@ public class Q3 {
 
 
 
-
+//Question
 // Given an array, for each index, replace the element with the count of greater elements present to the right of that element.
 
 // Input Format

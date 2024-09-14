@@ -52,3 +52,10 @@ public class Q1 {
         
     }
 }
+// Time complexity: O(n), because the loop runs from n down to 1, and each iteration takes constant time.
+// Space complexity: O(1), as only a few variables are used and no additional significant memory is consumed.
+
+
+
+
+

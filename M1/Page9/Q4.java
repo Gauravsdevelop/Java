@@ -13,9 +13,6 @@
 
 // Print characters as given in the problem statement.
 
-import java.io.*;
-import java.util.*;
-
 public class Q4 {
 
     public static void main(String[] args) {
@@ -25,3 +22,5 @@ public class Q4 {
     }
     
 }
+// Time complexity: O(1), since the loop iterates a fixed number of times (26 iterations) regardless of input size.
+// Space complexity: O(1), as only a single loop variable (c) is used and no additional significant memory is consumed.

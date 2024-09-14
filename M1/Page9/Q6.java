@@ -59,3 +59,5 @@ public class Q6 {
         } }
 }
 
+// Time complexity: O(1), because the loop runs a fixed number of times (26 iterations) regardless of input size.
+// Space complexity: O(1), as only a few variables are used and no additional significant memory is consumed.
