@@ -1,21 +1,17 @@
 // // HW_Print series AAA,bb,CCC,dd,EEE,ff till 26 lines
 
-// Write a program to print AAA,bb,CCC,dd,EEE,ff,....uptil 26 lines ,where each String printed in a seperate line.
+// Write a program to print AAA,bb,CCC,dd,EEE,ff,....uptil 26 lines ,where each String     printed in a seperate line.
 
 // Input Format
-
 // No input
 
 // Constraints
-
 // NA
 
 // Output Format
-
 // Print each String in a seperate line.
 
 // Sample Output 0
-
 // AAA
 // bb
 // CCC
