@@ -109,7 +109,7 @@
 // dISCUSSED one
 import java.util.*;
 
-public class Solution {
+public class Q4 {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();

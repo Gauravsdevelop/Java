@@ -1,6 +1,5 @@
 // // Max Subarray 2          // kedans Algo
 
-
 // Samantha is a college student who is struggling to balance her part-time job with her studies. One day, she decided to take a break and went to the nearby park. While sitting on the bench, she overheard a group of students discussing a coding challenge they were trying to solve. Samantha was intrigued and asked them about the challenge.
 
 // The challenge was to find the contiguous sub-array with the maximum sum from a given array. Samantha decided to take up the challenge and spent the next few hours working on it. Finally, she was able to come up with a solution that could find the maximum sum sub-array in linear time.

@@ -1,10 +1,10 @@
+// decreasing order using inbuilt sort
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
 
 
-// decreasing order using inbuilt sort
 
 // Sort Array in decreasing order using inbuilt sort.
 
