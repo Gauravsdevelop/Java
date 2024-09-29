@@ -1,4 +1,5 @@
 // // Rotate The Matrix by 180 Degree
+
 // Given a n * n matrix, rotate it by 180 degrees, without taking any extra space and making the changes within the matrix. Print the final matrix such that all elements of the row are tab separated and are in one line.
 
 // NOTE:- After answering the question, attempt the related question in the linked resource to improve your understanding of the question . Click here
@@ -98,7 +99,7 @@
 //Discussed
 import java.util.*;
 
-public class Q6 {
+public class Q5 {
 
     public static void transpose(int[][] A, int n) {
         for (int i = 0; i < n; i++) {

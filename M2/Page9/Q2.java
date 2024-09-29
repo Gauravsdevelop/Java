@@ -49,49 +49,49 @@
 
 
 // Finded
-// import java.io.*;
-// import java.util.*;
 
-// public class Q2 {
+import java.util.*;
 
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
+public class Q2 {
 
-//         // Read the size of the array
-//         int N = scanner.nextInt();
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-//         // Read the 1-D array elements
-//         int[] array = new int[N];
-//         for (int i = 0; i < N; i++) {
-//             array[i] = scanner.nextInt();
-//         }
+        // Read the size of the array
+        int N = scanner.nextInt();
 
-//         // Read dimensions of the 2-D array
-//         int p = scanner.nextInt();
-//         int q = scanner.nextInt();
+        // Read the 1-D array elements
+        int[] array = new int[N];
+        for (int i = 0; i < N; i++) {
+            array[i] = scanner.nextInt();
+        }
 
-//         // Initialize the 2-D array
-//         int[][] matrix = new int[p][q];
+        // Read dimensions of the 2-D array
+        int p = scanner.nextInt();
+        int q = scanner.nextInt();
 
-//         // Fill the 2-D array with elements from the 1-D array
-//         int index = 0;
-//         for (int i = 0; i < p; i++) {
-//             for (int j = 0; j < q; j++) {
-//                 matrix[i][j] = array[index++];
-//             }
-//         }
+        // Initialize the 2-D array
+        int[][] matrix = new int[p][q];
 
-//         // Print the 2-D array
-//         for (int i = 0; i < p; i++) {
-//             for (int j = 0; j < q; j++) {
-//                 System.out.print(matrix[i][j]);
-//                 if (j < q - 1) {
-//                     System.out.print(" "); // Space between elements
-//                 }
-//             }
-//             System.out.println(); // New line after each row
-//         }
+        // Fill the 2-D array with elements from the 1-D array
+        int index = 0;
+        for (int i = 0; i < p; i++) {
+            for (int j = 0; j < q; j++) {
+                matrix[i][j] = array[index++];
+            }
+        }
 
-//         scanner.close();
-//     }
-// }
+        // Print the 2-D array
+        for (int i = 0; i < p; i++) {
+            for (int j = 0; j < q; j++) {
+                System.out.print(matrix[i][j]);
+                if (j < q - 1) {
+                    System.out.print(" "); // Space between elements
+                }
+            }
+            System.out.println(); // New line after each row
+        }
+
+        scanner.close();
+    }
+}
