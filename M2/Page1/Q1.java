@@ -1,4 +1,44 @@
-// // GKSTR44 Bubble Sort
+// // GKSTR44 Bubble Sort           //Max. element at correct position
+
+import java.util.*;
+public class Q1{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt() ;
+        int[] A = new int[n];
+        for(int i=0; i<n; i++){  //input array
+            A[i] = sc.nextInt();
+            // System.out.print(A[i]);
+        }                                                   // 9 4 3 8 7
+        for(int i=0; i<n; i++){                               // 9 4 3 8 7   // 9 4 3 8 7 
+        //    System.out.print(A[i]); // our array            // i             
+            
+          for(int j=0; j<n-1-i; j++){                        //  9 4 3 8 7    // 4 9 3 8 7 
+            if(A[j] > A[j+1] ){                              //  j j+1             j j+1
+             int temp = A[j];
+               A[j] = A[j+1];
+              A[j+1] = temp;                                 //  4 9 3 8 7  // 4 3 9 8 7 //7  //
+            //   System.out.print(A[i]);
+            }
+
+        }
+    }
+    for(int i=0 ; i<n ; i++){
+        System.out.print(A[i] +" " );  //
+  }
+
+    }
+}
+
+
+// Time Complexity: O(n²) — due to the nested loops and comparison of adjacent elements.
+// Space Complexity: O(1) — because the sorting is done in place with no additional data structures.
+
+
+
+
+
 
 // Take an array of size N as input.
 // Sort the array using bubble sort.
@@ -23,44 +63,10 @@
 // 3 4 7 8 9
 
 
+//  9 4 3 8 7 ==> 4 3 8 7 9 ==> 4 , 3 ,7, 8 , 9 
+
+
 // Discussion
-
-import java.util.*;
-
-public class Q1{
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int n = sc.nextInt() ;
-
-        int[] A = new int[n];
-    
-        for(int i=0; i<n; i++){  //input array
-            A[i] = sc.nextInt();
-            // System.out.print(A[i]);
-        }
-
-        for(int i=0; i<n; i++){
-        //    System.out.print(A[i]); // our array 
-            
-          for(int j=0; j<n-1-i ; j++){
-            if(A[j] > A[j+1] ){
-             int temp = A[j];
-               A[j] = A[j+1];
-              A[j+1] = temp;
-            //   System.out.print(A[i]);
-            }
-
-        }
-    }
-    for(int i=0 ; i<n ; i++){
-        System.out.print(A[i] +" " );
-  }
-
-
-    }
-}
 
 
 //chat gpt answer 

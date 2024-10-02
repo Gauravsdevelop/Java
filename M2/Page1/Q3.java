@@ -75,35 +75,67 @@
 
 
 
-import java.util.*;
+// import java.util.*;
 
-public class Q3 {
+// public class Q3 {
 
-    public static void main(String[] args) {
-     Scanner scanner = new Scanner(System.in);
+//     public static void main(String[] args) {
+//      Scanner scanner = new Scanner(System.in);
   
-        int n = scanner.nextInt();   
-        int[] A = new int[n];
+//         int n = scanner.nextInt();   
+//         int[] A = new int[n];
 
-        for (int i = 0; i < n; i++) {
-            A[i] = scanner.nextInt();
+//         for (int i = 0; i < n; i++) {
+//             A[i] = scanner.nextInt();
+//         }                                                   //9 4 3 8 7          
+//         //inserton sort logic
+//     for (int i = 0; i < n; i++) {                           // 9 4 3 8 7  //9
+//         for (int j = i; j >= 1 ; j--) {                     // 9 4 3 8 7    
+//            if(A[j] < A[j-1]){           // 9 < 8                                   
+//             int tmp =A[j];
+//             A[j] = A[j-1];
+//             A[j-1] = tmp ;
+//            }else{
+//                 break;
+//            }
+//         }
+//         }   
+//         for (int i = 0; i < n; i++) {
+//             System.out.print(A[i] + " ");
+//         }
+//     }
+// }
+
+
+
+
+
+
+import java.util.*;
+public class Q3 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0; i<n; i++)
+        {
+            arr[i]=sc.nextInt();
         }
-         
-        
-        //inserton sort logic
-    for (int i = 0; i < n; i++) {
-        for (int j = i; j >= 1 ; j--) {
-           if(A[j] < A[j-1]){
-            int tmp =A[j];
-            A[j] = A[j-1];
-            A[j-1] = tmp ;
-           }else{
-                break;
-           }
+        for(int i=0; i<n-1; i++)
+        {
+            for(int j=i+1; j<n; j++)
+            {
+                if(arr[i] > arr[j])
+                {
+                    int temp=arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
+                }
+            }
         }
-        }   
-        for (int i = 0; i < n; i++) {
-            System.out.print(A[i] + " ");
+        for(int i=0; i<n; i++)
+        {
+            System.out.print(arr[i]+" ");
         }
     }
 }
